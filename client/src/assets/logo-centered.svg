@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 361" width="343" height="361">
+  <!-- Document outline with folded corner (centered and slightly larger) -->
+  <path d="M70 50 h130 l45 45 v160 a18 18 0 0 1 -18 18 h-157 a18 18 0 0 1 -18 -18 v-187 a18 18 0 0 1 18 -18 z"
+        fill="none" stroke="#00a8e8" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M200 50 v45 h45" fill="none" stroke="#00a8e8" stroke-width="10" stroke-linejoin="round"/>
+  <!-- Lines -->
+  <line x1="100" y1="130" x2="185" y2="130" stroke="#00ced1" stroke-width="8" stroke-linecap="round"/>
+  <line x1="100" y1="158" x2="165" y2="158" stroke="#00ced1" stroke-width="8" stroke-linecap="round"/>
+  <line x1="100" y1="186" x2="145" y2="186" stroke="#00ced1" stroke-width="8" stroke-linecap="round"/>
+  <!-- Checkmark circle shifted right, still fully inside -->
+  <circle cx="195" cy="220" r="32" fill="none" stroke="#00ced1" stroke-width="8"/>
+  <polyline points="178,220 190,234 214,206" fill="none" stroke="#00ced1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
