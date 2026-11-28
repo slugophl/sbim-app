@@ -1,6 +1,15 @@
 import heroImg from '../assets/logo-centered-cropped.svg';
+import { useAuth } from '../context/AuthContext';
 
 function Header() {
+    const { isSignedIn, setIsSignedIn } = useAuth();
+
+    async function handleLogout() {
+        await api('/api/logout/', { method: 'POST' });
+        setIsSignedIn(false);
+        window.location.href = '/';
+    }
+
     return (
     <header className="p-3 text-bg-dark">
         <div className="container">
@@ -17,7 +26,9 @@ function Header() {
                         <li><a href="/create-invoice" className="nav-link px-2 text-white">Create</a></li>
                     </ul>
                     <div className="text-end ms-3">
-                        <a href="/signin" className="btn btn-outline-light">Sign in</a>
+                        {isSignedIn && (
+                            <a href="/signin" className="btn btn-outline-light">Logout</a>
+                        )}
                     </div>
                 </div>
             </div>
